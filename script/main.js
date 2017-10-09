@@ -1,0 +1,1 @@
+//Javascript by Magnus Pettersen

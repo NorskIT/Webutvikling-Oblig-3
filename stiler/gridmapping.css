@@ -1,0 +1,65 @@
+/*Grid-mapping. Magnus Pettersen*/
+
+
+.master-grid {
+	width: 100%;
+	max-width: 1200px;
+	margin: 25px auto;
+	display: grid;
+	grid-column-gap: 13px;
+	grid-row-gap: 5px;
+	grid-template-areas:	"top-left header header header"
+							"meny topimg topimg topimg"
+							"meny main main main"
+							"calender main main main"
+							"space footer footer footer";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 75px auto 300px auto 60px;	
+}
+
+.grid-top-left {
+	grid: top-left;
+	border: 1px solid black;
+	position: relative;
+	background-color: rgba(255,255,255,0.2);
+	
+}
+
+.grid-header {
+	grid-area: header;
+	position: relative;
+	
+}
+
+.grid-meny {
+	grid-area: meny;
+	
+}
+
+.grid-topimg {
+	grid-area: topimg;
+	border: 1px solid black;
+	position: relative;
+	background-color: rgba(255,255,255,0.2);
+	
+}
+
+.grid-main {
+	grid-area: main;
+	border: 1px solid black;
+}
+
+.grid-footer {
+	grid-area: footer;
+	border: 1px solid black;
+	background-color: rgba(255,255,255,0.2);
+	text-align: right;
+	position: relative;
+}
+
+.grid-calender {
+	grid-area: calender;
+	border: 1px solid black;
+	max-height: 160px;
+	
+}
