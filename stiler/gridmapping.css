@@ -1,15 +1,10 @@
-/***
+/*
  *       ____ ____  ___ ____    __  __    _    ____  ____ ___ _   _  ____ 
  *      / ___|  _ \|_ _|  _ \  |  \/  |  / \  |  _ \|  _ \_ _| \ | |/ ___|
  *     | |  _| |_) || || | | | | |\/| | / _ \ | |_) | |_) | ||  \| | |  _ 
  *     | |_| |  _ < | || |_| | | |  | |/ ___ \|  __/|  __/| || |\  | |_| |
- *      \____|_| \_\___|____/  |_|  |_/_/   \_\_|   |_|  |___|_| \_|\____|
- *      __  __   ____   ____                                              
- *     |  \/  | |  _ \ |  _ \                                             
- *     | |\/| | | | | || |_) |                                            
- *     | |  | |_| |_| ||  __/                                             
- *     |_|  |_(_)____(_)_|                                                
- *                                                                        
+ *      \____|_| \_\___|____/  |_|  |_/_/   \_\_|   |_|  |___|_| \_|\____|                                           
+ * 							Laget av Magnus Pettersen                                                                  
  */
 
 
@@ -17,9 +12,9 @@
 	width: 100%;
 	max-width: 100%;
 	margin: 25px auto;
-	margin-top: 0;
+	margin-top: 20px;
 	display: grid;
-	grid-column-gap: 13px;
+	grid-column-gap: 15px;
 	grid-row-gap: 5px;
 	grid-template-areas:	"header header header header"
 							"aside nav nav nav"
@@ -27,36 +22,37 @@
 							"BLANK main main main"
 							"footer footer footer footer";
 	grid-template-columns: 260px 1fr 1fr 1fr;
-	grid-template-rows: 225px 60px 440px auto 60px;	
+	grid-template-rows: 230px 65px 440px auto 80px;	*/
 }
 
 .grid-header {
 	grid-area: header;
 	border: 1px solid black;
 	position: relative;
-	background-image: url("../bilder/header-background.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
+	border: 1px solid black;
 }
 
 .grid-aside {
-	background-color: blue;
+	background-color: rgba(255,255,255,0.2);
 	grid-area: aside;
+	border: 1px solid black;
 }
 
 .grid-nav {
-	background-color: red;
+	background-color: rgba(255,255,255,0.2);
 	grid-area: nav;
+	border: 1px solid black;
 	
 }
 
 .grid-main {
-	background-color: cyan;
+	background-color: rgba(255,255,255,0.2);
 	grid-area: main;
 	border: 1px solid black;
 }
 .grid-blank {
 	grid-area: BLANK;
+	border: 1px solid black;
 	
 }
 

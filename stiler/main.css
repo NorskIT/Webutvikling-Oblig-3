@@ -1,15 +1,33 @@
-/*Laget av Magnus Pettersen*/
+/*
+ *     __        _______ ____           ___  _     _ _         _____ 
+ *     \ \      / / ____| __ )         / _ \| |__ | (_) __ _  |___ / 
+ *      \ \ /\ / /|  _| |  _ \   _____| | | | '_ \| | |/ _` |   |_ \ 
+ *       \ V  V / | |___| |_) | |_____| |_| | |_) | | | (_| |  ___) |
+ *        \_/\_/  |_____|____/         \___/|_.__/|_|_|\__, | |____/ 
+ *                                                     |___/         
+ * 						Laget av Magnus Pettersen
+ *                                                                   
+ */
 
+ 
+ 
 @import url("normalize.css");
 @import url("gridmapping.css");
 @import url("myButtons.css");
+
+
 	@import url('https://fonts.googleapis.com/css?family=Catamaran:200'); 
 	/*	Brukes til vanlig tekst.
-		font-family: 'Catamaran', sans-serif; */
+	/	font-family: 'Catamaran', sans-serif; */
 	
 	@import url('https://fonts.googleapis.com/css?family=Raleway:700');
 	/*	Brukes til linker og buttons.
-		font-family: 'Raleway', sans-serif; */
+	/	font-family: 'Raleway', sans-serif; */
+
+
+
+
+
 
 /*      ____  ____  _____ _____ _____  __
  *     |  _ \|  _ \| ____|  ___|_ _\ \/ /
@@ -17,7 +35,6 @@
  *     |  __/|  _ <| |___|  _|  | | /  \ 
  *     |_|   |_| \_\_____|_|   |___/_/\_\                                      
  */  
- 
 body * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -27,7 +44,6 @@ body {
 }
 header, main, footer, nav, article, aside, div {
 	display: block;
-	overflow: hidden;
 }
 h1, h2, h3, h4, p {
 	margin: 0;
@@ -41,7 +57,7 @@ li, ul {
 }
 a {
 	font-family: 'Raleway', sans-serif;
-	
+	font-size: 16pt;
 }
 h1, h2, h3 {
 	font-family: 'Catamaran', sans-serif;
@@ -51,13 +67,78 @@ p {
 	font-family: 'Catamaran', sans-serif;
 	
 }
-
-
 /* 	 _____ _____ _____ _____ _____ _____ 
  *	|_____|_____|_____|_____|_____|_____|
  *	|_____|_____|_____|_____|_____|_____|
 */
 
+
+
+body {
+	width: 70%;
+	margin: 0 auto;
+	
+}
+
+/*#full_background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+	z-index: -100;
+    background-size: cover;
+	opacity: 0.8;
+	background-image: url("../bilder/background_full5.jpg");
+}*/
+
+#full_background {
+	 position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+	z-index: -100;
+    background-size: cover;
+	background-color: #aaa;
+	
+}
+
+#main_header {
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../bilder/header_background2.jpg");
+	box-shadow: 9px 13px 5px -5px rgba(0,0,0,0.43);
+	
+}
+
+#main_nav{
+	box-shadow: 9px 13px 5px -5px rgba(0,0,0,0.43);
+	
+}
+#main_nav ul li{
+	display: inline-block;
+	
+}
+
+#main_aside {
+	box-shadow: 9px 13px 5px -5px rgba(0,0,0,0.43);
+	
+}
+
+#main_main {
+	box-shadow: 9px 13px 5px -5px rgba(0,0,0,0.43);
+	
+}
+
+#main_footer {
+	box-shadow: 9px 13px 5px -5px rgba(0,0,0,0.43);
+	
+}
+
+#
 
 
 
