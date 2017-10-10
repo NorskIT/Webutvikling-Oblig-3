@@ -15,7 +15,7 @@
 	margin-top: 20px;
 	display: grid;
 	grid-column-gap: 15px;
-	grid-row-gap: 5px;
+	grid-row-gap: 10px;
 	grid-template-areas:	"header header header header"
 							"aside nav nav nav"
 							"aside main main main"
