@@ -1,65 +1,68 @@
-/*Grid-mapping. Magnus Pettersen*/
+/***
+ *       ____ ____  ___ ____    __  __    _    ____  ____ ___ _   _  ____ 
+ *      / ___|  _ \|_ _|  _ \  |  \/  |  / \  |  _ \|  _ \_ _| \ | |/ ___|
+ *     | |  _| |_) || || | | | | |\/| | / _ \ | |_) | |_) | ||  \| | |  _ 
+ *     | |_| |  _ < | || |_| | | |  | |/ ___ \|  __/|  __/| || |\  | |_| |
+ *      \____|_| \_\___|____/  |_|  |_/_/   \_\_|   |_|  |___|_| \_|\____|
+ *      __  __   ____   ____                                              
+ *     |  \/  | |  _ \ |  _ \                                             
+ *     | |\/| | | | | || |_) |                                            
+ *     | |  | |_| |_| ||  __/                                             
+ *     |_|  |_(_)____(_)_|                                                
+ *                                                                        
+ */
 
 
 .master-grid {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 25px auto;
+	margin-top: 0;
 	display: grid;
 	grid-column-gap: 13px;
 	grid-row-gap: 5px;
-	grid-template-areas:	"top-left header header header"
-							"meny topimg topimg topimg"
-							"meny main main main"
-							"calender main main main"
-							"space footer footer footer";
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 75px auto 300px auto 60px;	
-}
-
-.grid-top-left {
-	grid: top-left;
-	border: 1px solid black;
-	position: relative;
-	background-color: rgba(255,255,255,0.2);
-	
+	grid-template-areas:	"header header header header"
+							"aside nav nav nav"
+							"aside main main main"
+							"BLANK main main main"
+							"footer footer footer footer";
+	grid-template-columns: 260px 1fr 1fr 1fr;
+	grid-template-rows: 225px 60px 440px auto 60px;	
 }
 
 .grid-header {
 	grid-area: header;
-	position: relative;
-	
-}
-
-.grid-meny {
-	grid-area: meny;
-	
-}
-
-.grid-topimg {
-	grid-area: topimg;
 	border: 1px solid black;
 	position: relative;
-	background-color: rgba(255,255,255,0.2);
+	background-image: url("../bilder/header-background.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.grid-aside {
+	background-color: blue;
+	grid-area: aside;
+}
+
+.grid-nav {
+	background-color: red;
+	grid-area: nav;
 	
 }
 
 .grid-main {
+	background-color: cyan;
 	grid-area: main;
 	border: 1px solid black;
+}
+.grid-blank {
+	grid-area: BLANK;
+	
 }
 
 .grid-footer {
 	grid-area: footer;
 	border: 1px solid black;
 	background-color: rgba(255,255,255,0.2);
-	text-align: right;
 	position: relative;
-}
-
-.grid-calender {
-	grid-area: calender;
-	border: 1px solid black;
-	max-height: 160px;
-	
 }
