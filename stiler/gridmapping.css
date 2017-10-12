@@ -4,13 +4,13 @@
  *     | |  _| |_) || || | | | | |\/| | / _ \ | |_) | |_) | ||  \| | |  _ 
  *     | |_| |  _ < | || |_| | | |  | |/ ___ \|  __/|  __/| || |\  | |_| |
  *      \____|_| \_\___|____/  |_|  |_/_/   \_\_|   |_|  |___|_| \_|\____|                                           
- * 							Laget av Magnus Pettersen                                                                  
+ * 							Laget av Magnus Pettersen
  */
 
 
 .master-grid {
 	width: 100%;
-	max-width: 100%;
+	max-width: 1200px;
 	margin: 25px auto;
 	margin-top: 20px;
 	display: grid;
@@ -21,7 +21,7 @@
 							"aside main main main"
 							"BLANK main main main"
 							"footer footer footer footer";
-	grid-template-columns: 260px 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 230px 65px 440px auto 80px;	*/
 }
 
@@ -49,6 +49,7 @@
 	background-color: rgba(255,255,255,0.2);
 	grid-area: main;
 	border: 1px solid black;
+	display: flex;
 }
 .grid-blank {
 	grid-area: BLANK;
