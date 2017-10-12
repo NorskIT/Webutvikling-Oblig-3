@@ -11,19 +11,42 @@
  
  
 /* Place directly on <a> */
-.small_button { 
+
+.small_button_skew { 
 	text-decoration: none;
-	display: block;
+	display: inline-block; /* Vertical or horizontal lines.*/
 	min-width: 60px;
 	width: auto;
 	padding: 5px 15px 5px 15px;
 	background-color: white;
-	border: 1px solid black;
-	text-align: center;
-	box-sizing: content-box;
+	border: 2px solid black;
+	transition: background 0.2s;
+	transition: box-shadow 0.2s;
+	transform: skew(25deg); /*IMPORTANT: Remember to skew back the text eg. -25deg at a-tag */
+	background: #aaa;
 	
 }
-.small_button:hover {
-	background: black;
+.small_button_skew:hover {
+	background: grey;
+	border-color: #000;
+    box-shadow:0 0 15px #999;
 	
+	
+}
+.small_button_skew:nth-child(even):hover {
+	background: grey;
+}
+.small_button_skew:nth-child(even) {
+	background: #eee;
+	
+} 
+
+
+
+
+
+
+.large_button {
+	border: 2px solid black;
+	border-radius: 5%;
 }
