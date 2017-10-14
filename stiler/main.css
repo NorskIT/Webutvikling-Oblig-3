@@ -294,6 +294,11 @@ p {
 	font-size: 16pt;
 	margin: 3px;
 	color: purple;
+	color: purple;
+}
+.copy_text a {
+	color: purple;
+	font-family: 'Catamaran', sans-serif; 
 }
 
  
@@ -319,18 +324,29 @@ p {
 
  @media only screen and (max-width: 1100px) {
 	 
+	 #main_nav {
+		 
+		 text-align: center;
+	 }
+	
+	#main_aside {
+		text-align: center;
+	}
+	 
 	 .aside_iframe {
 		 display: none;
 	 }
+	 
+	 .aside_article table {
+		 margin: 0 auto;
+	 }
+	 
+	 #google_button {
+		 
+	 }
  }
- 
- 
- 
- 
- 
- 
 
-
+ 
 @media only screen and (max-width: 350px) {
 	body {
 		background: red;

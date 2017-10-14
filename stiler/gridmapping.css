@@ -103,7 +103,7 @@
 							"aside aside aside"
 							"footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 230px 65px 440px auto 160px 80px;	
+	grid-template-rows: 230px 65px 440px auto 245px 80px;	
 	}
 	
 	
@@ -127,7 +127,7 @@
 							"aside aside aside"
 							"footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 230px 130px 440px auto 160px 80px;	
+	grid-template-rows: 230px 130px 440px auto 245px 80px;	
 	}
 	
 	
