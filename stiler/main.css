@@ -413,6 +413,14 @@ code {
  }
 
  
+@media only screen and (max-width: 450px) { 
+	.article_main img {
+		height: 100px;
+		
+	}
+
+
+}
 @media only screen and (max-width: 350px) {
 	body {
 		
@@ -424,6 +432,7 @@ code {
 		width: 290px;
 		margin: 0 auto;
 	}
+	
 }
 
 
