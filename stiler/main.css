@@ -291,6 +291,18 @@ code {
 	border: 2px solid black;
 	
 }
+.article_main table {
+	text-align: center;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 288px;
+	height: 150px;
+}
+.article_main td {
+	border: 1px solid black;
+	background: white;
+	text-align: left;
+}
 
 /*Thumb articles.*/
 .article_left {
