@@ -413,6 +413,28 @@ code {
  }
 
  
+@media only screen and (max-width: 800px) { 
+	.article_main img {
+		min-width: 200px;
+		max-width: 100%;
+		
+	}
+
+
+} 
+@media only screen and (max-width: 717px) { 
+	.article_main img {
+		height: 150px;
+		
+	} 
+@media only screen and (max-width: 600px) { 
+	.article_main img {
+		height: 150px;
+		
+	}
+
+
+}
 @media only screen and (max-width: 350px) {
 	body {
 		
@@ -424,6 +446,7 @@ code {
 		width: 290px;
 		margin: 0 auto;
 	}
+	
 }
 
 

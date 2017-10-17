@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../stiler/main.css" />
 		<meta name="description" content="Hvordan forbedre din SEO med små men effektive tiltak!">
 		<meta name="keywords" content="SEO,Search,Engine,Optimization,Søkemotoroptimalisering,Sass,Scss,Css-Sass,Css/sass">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	</head>
 	
 	<body>
@@ -83,8 +84,40 @@
 				
 					<article class="article_main">
 						<p>Forklar kort hva Sass er, og vis strukturen på Sass-filene dine i dette prosjektet (det kan være et skjermbilde, eller du kan vise strukturen ved å lage en uordnet liste). Hvis du ikke har valgt å gjøre ekstra 1 og bruke Sass, gjør dette som et tankeeksperiment og vis hvordan du ville strukturert filene hvis du skulle gjort om CSS-filen til Sass.</p>
+						<h2>En enklere å mer effektiv måte å jobbe med CSS</h2>
+						<p><strong>Syntactically Awesome Style Sheet</strong>(SASS) er et monteringsspråk som kan konverteres over til .CSS.
+						Dette har blitt laget på grunnlag av at stylesheets blir bare større og mer komplekse for hver eneste dag. 
+						Med større stylesheets blir det større problemer å holde oversikt over hva som er hva, og hva som allerede har blitt laget.</p>
+						<p>SASS i seg selv er veldig lite brukende. Selve .sass-filen er nødt til å bli konvertert over til en .css-fil. Det finnes flere programmer som gjør dette,
+						 men vi skal bruke den som heter Scout-App.</p>
+						
+						<a href="http://scout-app.io/" target="_blank" ><img alt="Scout-app sin log." height="200" src="http://scout-app.io/_img/big-sticker.png" /></a>
+						
+						<h2>Variabler og mixins</h2>
+						
+						<p>Med Sass så har du mange flere fordeler, den ene er at du kan 
+						<a href="https://en.wikipedia.org/wiki/Nesting_(computing)" target="_blank">neste koden din</a> 
+						slik at den blir mye mer organisert. Du har også muligheten til å lage variabler, partials og mixins.<br />
+						Med variabler kan du f.eks. lagre dine egne pre-set farger eller spesifikke font-sizer kanskje? Mixins 
+						kan bli sett på som en funksjon som gjør en liten blokk kode. 
+						Dette fungerer meget bra ilag med stylinger som ikke er kompitable med alle typer nettlesere. 
+						Da kan du lage en mixins som ser noe alla slikt ut, tatt ifra <a href="http://sass-lang.com/guide" target="_blank">Sass in egen guide</a></p>
+						
+						<img alt="Eksempel på mixin i .sass" height="200" src="./sass_syntax_mixins.png" />
+						
+						<p>Her har du spart deg selv 6 linjer med kode. Koden er gjennbrukbar til videre bruk om du plassere den i sin egen mixins .sass fil. 
+						Da skal vi videre til hvordan du kan sette opp ditt oppsett for at sass skal fungere bra. Skal en bruke sass på en god måte, så er det greit å tenke at 
+						alle .sass egenskaper(variabler, mixins, partials) burde være i sine egne filer. Struktur på dette kan se noe slikt ut: </p>
 						
 						
+						<img alt="Eksempel oppsett av .sass filer" height="200" src="./sass_oversikt1.png" />
+						<img alt="Eksempel oppsett av .sass filer" height="200" src="./sass_oversikt2.png" />
+						
+						<p>Alle filer som starter med understrek er filer som ikke vil bli konvertert til en .css fil via Scout-App, og det er i disse filene du lagrer dine ferdig
+						 lagde variabler, mixins og partials. En kjekk måte å gjøre dette på er å ha flere filer med forskjellige oppgaver og en hovedfil i hver seksjon som henter 
+						 hver og en av disse filene. I modules mappa har jeg 3 filer, her har jeg mine forvalgte farger og noen små variabler til font-size og diverse. I _all.scss har 
+						 jeg kun importert disse filene, slik at det blir lett for meg å hente inn disse til min main.scss. Det er også lettere for meg å holde orden på ting på denne måten.
+						 Dette gjør jeg også for andre seksjoner, slik som grid og partials.</p>
 						
 					</article>
 					
